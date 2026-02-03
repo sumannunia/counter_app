@@ -13,30 +13,30 @@ const STORAGE_KEYS = {
   THEME_STYLE: "radha-krishna-theme-style", // 'default' | 'radha'
 };
 
-// Background Image URLs - Easy to replace
+// Background Image URLs - Uses Vite's base URL for correct path on GitHub Pages
 const BACKGROUND_IMAGES = {
-  desktop: "/radha-krishna-desktop.png",
-  mobile: "/radha-krishna-mobile.jpeg",
+  desktop: `${import.meta.env.BASE_URL}radha-krishna-desktop.png`,
+  mobile: `${import.meta.env.BASE_URL}radha-krishna-mobile.jpeg`,
 };
 
 // Inspirational Quotes
 const QUOTES = {
   default: [
-    { text: "Count your blessings, not your problems.", author: "— Wisdom" },
-    { text: "Every number tells a story. What's yours?", author: "— Life" },
+    { text: "Count your blessings, not your problems.", author: "" },
+    { text: "Every number tells a story. What's yours?", author: "" },
   ],
   radha: [
     {
       text: "Where there is Radha, there is Krishna... where there is love, there is the divine.",
-      author: "— Bhakti Poetry",
+      author: "",
     },
     {
       text: "In the divine play of love, every moment counts.",
-      author: "— Vrindavan Wisdom",
+      author: "",
     },
     {
       text: "Let your heart be a garden where Krishna's love blooms eternal.",
-      author: "— Devotional Verse",
+      author: "",
     },
   ],
 };
